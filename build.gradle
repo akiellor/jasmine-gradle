@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+  maven { url 'https://raw.github.com/akiellor/jasmine-junit-runner/mvn-repo' }
+  mavenCentral()
+}
+
+sourceSets {
+  main {
+    resources {
+      srcDir 'src/main/javascript'
+    }
+  }
+  test {
+    resources {
+      srcDir 'src/test/javascript'
+    }
+  }
+}
+
+dependencies {
+  testCompile 'jasmine:junit-runner:0.7'
+}
