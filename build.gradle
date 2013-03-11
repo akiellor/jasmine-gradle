@@ -20,5 +20,5 @@ sourceSets {
 }
 
 dependencies {
-  testCompile 'jasmine:junit-runner:0.7'
+  testCompile 'jasmine:junit-runner:0.8'
 }
